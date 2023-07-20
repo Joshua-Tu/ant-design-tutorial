@@ -23,6 +23,7 @@ const FormDemo: React.FC = () => (
     <Form.Item
       label='Username'
       name='username'
+      validateTrigger={["onBlur", "onChange"]}
       rules={[{ required: true, message: "Please input your username!" }]}
     >
       <Input />
